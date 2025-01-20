@@ -1,0 +1,11 @@
+{
+    "sidebar-dashboard": "Tableau de bord",
+    "sidebar-posts": "Publications",
+    "age-line-chart": "Répartition par âge",
+    "gender-pie-chart": "Répartition par genre",
+    "role-pie-chart": "Répartition des rôles",
+    "department-bar-chart": "Nombre d'utilisateurs par département",
+    "posts-col-id": "ID",
+    "posts-col-title": "Titre",
+    "posts-col-body": "Contenu"
+}

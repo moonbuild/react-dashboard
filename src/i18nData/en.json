@@ -1,0 +1,11 @@
+{
+    "sidebar-dashboard": "Dashboard",
+    "sidebar-posts": "Posts",
+    "age-line-chart": "Age Distribution",
+    "gender-pie-chart": "Gender Distribution",
+    "role-pie-chart":"Role Distribution",
+    "department-bar-chart":"User Count by Department",
+    "posts-col-id": "ID",
+    "posts-col-title": "Title",
+    "posts-col-body": "Body"
+}
