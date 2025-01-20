@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Multi-Language Dashboard with Infinite Query and APIs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+A React dashboard featuring:
+- **Graphs** populated with data from a public API.
+- **Table** with paginated data and infinite scrolling using React Query.
+- **State Management** via Zustand.
+- **Multi-language support** using `react-i18next`.
 
-Currently, two official plugins are available:
+## APIs
+- **Table API**: `GET https://jsonplaceholder.typicode.com/posts?_page=1&_limit=10`
+- **Graph API**: `GET https://dummyjson.com/users`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
 
-## Expanding the ESLint configuration
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/moonbuild/react-dashboard.git
+   cd react-dashboard
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+3. **Run the app**:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Graphs**: Displayed with data fetched from the API (e.g., bar/pie charts).
+- **Table**: Paginated with infinite scrolling powered by React Query.
+- **State Management**: Zustand handles user preferences.
+- **Localization**: Supports English and Spanish with `react-i18next`.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+GNU3 Apache
